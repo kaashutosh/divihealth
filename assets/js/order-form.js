@@ -238,7 +238,7 @@
 
     function normalizeWhatsAppNumber(number) {
         const digits = String(number || '').replace(/\D/g, '');
-        if (!digits) return '918779967380';
+        if (!digits) return '918178218083';
         return digits.startsWith('91') ? digits : '91' + digits;
     }
 
@@ -255,7 +255,7 @@
             'Notes: ' + (formData.notes || 'None')
         ];
 
-        const whatsappNumber = normalizeWhatsAppNumber('8779967380');
+        const whatsappNumber = normalizeWhatsAppNumber('8178218083');
         const whatsappUrl = 'https://wa.me/' + whatsappNumber + '?text=' + encodeURIComponent(summaryLines.join('\n'));
         setTimeout(function () {
             window.open(whatsappUrl, '_blank', 'noopener');
